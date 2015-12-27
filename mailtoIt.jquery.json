@@ -4,7 +4,8 @@
     "title": "jQuery mailtoIt",
     "description": "jQuery plugin to convert any element into a mailto.",
     "keywords": [
-        "mailto"
+        "mailto",
+        "jquery-plugin"
     ],
     "version": "0.1.0",
     "author": {
