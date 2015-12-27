@@ -9,7 +9,7 @@
     "version": "0.1.0",
     "author": {
         "name": "chris-fuchman",
-        "url": "https://"
+        "url": "https://github.com/chris-fuchman"
     },
     "maintainers": [
         {
@@ -25,5 +25,8 @@
         }
     ],
     "homepage": "https://github.com/chris-fuchman/jquery.mailtoIt",
-    "docs": "https://github.com/chris-fuchman/jquery.mailtoIt"
+    "docs": "https://github.com/chris-fuchman/jquery.mailtoIt",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
 }
