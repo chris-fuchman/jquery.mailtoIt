@@ -11,20 +11,90 @@
 7 silly cache add   name: null,
 7 silly cache add   rawSpec: '.',
 7 silly cache add   spec: '/Users/admin/Desktop/Git/jquery.mailtoIt',
-7 silly cache add   type: 'local' }
-8 error addLocal Could not install /Users/admin/Desktop/Git/jquery.mailtoIt
-9 verbose stack Error: EISDIR: illegal operation on a directory, read
-9 verbose stack     at Error (native)
-10 verbose cwd /Users/admin/Desktop/Git/jquery.mailtoIt
-11 error Darwin 14.5.0
-12 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
-13 error node v5.3.0
-14 error npm  v3.3.12
-15 error code EISDIR
-16 error errno -21
-17 error syscall read
-18 error eisdir EISDIR: illegal operation on a directory, read
-18 error eisdir This is most likely not a problem with npm itself
-18 error eisdir and is related to npm not being able to find a package.json in
-18 error eisdir a package you are trying to install.
-19 verbose exit [ -21, true ]
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/admin/.npm/mailtoIt/0.1.0/package.tgz not in flight; packing
+9 info lifecycle mailtoIt@0.1.0~prepublish: mailtoIt@0.1.0
+10 silly lifecycle mailtoIt@0.1.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/admin/.npm/mailtoIt/0.1.0/package.tgz',
+11 verbose tar pack   '/Users/admin/Desktop/Git/jquery.mailtoIt' ]
+12 verbose tarball /Users/admin/.npm/mailtoIt/0.1.0/package.tgz
+13 verbose folder /Users/admin/Desktop/Git/jquery.mailtoIt
+14 verbose addLocalTarball adding from inside cache /Users/admin/.npm/mailtoIt/0.1.0/package.tgz
+15 silly cache afterAdd mailtoIt@0.1.0
+16 verbose afterAdd /Users/admin/.npm/mailtoIt/0.1.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/admin/.npm/mailtoIt/0.1.0/package/package.json written
+18 silly publish { name: 'mailtoIt',
+18 silly publish   title: 'jQuery mailtoIt',
+18 silly publish   description: 'jQuery plugin to convert any element into a mailto.',
+18 silly publish   keywords: [ 'mailto', 'jquery-plugin', 'ecosystem:jquery' ],
+18 silly publish   version: '0.1.0',
+18 silly publish   author:
+18 silly publish    { name: 'chris-fuchman',
+18 silly publish      url: 'https://github.com/chris-fuchman' },
+18 silly publish   maintainers:
+18 silly publish    [ { name: 'chris-fuchman',
+18 silly publish        email: 'chris-fuchman@gogdog.com',
+18 silly publish        url: 'https://github.com/chris-fuchman' } ],
+18 silly publish   licenses:
+18 silly publish    [ { type: 'MIT',
+18 silly publish        url: 'https://github.com/chris-fuchman/jquery.mailtoIt/blob/master/MIT-LICENSE.txt' } ],
+18 silly publish   homepage: 'https://github.com/chris-fuchman/jquery.mailtoIt',
+18 silly publish   docs: 'https://github.com/chris-fuchman/jquery.mailtoIt',
+18 silly publish   dependencies: { jquery: '>=1.5' },
+18 silly publish   readme: '# jquery.mailtoIt\njQuery plugin that attachs a mailto to any element\n\n##Version\n0.1.0\n\n##Usage\n\t$(\'.mailtoit\').mailtoIt({\n\t\tmailto:\'chris-fuchman@gogdog.com\',\n\t\ttext:\'Email me\'\n\t});\n\t\n##Vendors\njQuery - [http://jquery.com](http://jquery.com)\n\n##License\nMIT License\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '1b78bfeafb54adab79928c6b287cd9a767a56d41',
+18 silly publish   _id: 'mailtoIt@0.1.0',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: '2854d9850143dbcb3165b87df62e8b329e8f8ce1',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name mailtoIt
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/mailtoIt
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/admin/.npm/mailtoIt/0.1.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/mailtoIt
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 2:46:26 PM
+29 verbose request using bearer token for auth
+30 verbose request id a5de3efed2f8ff43
+31 http request PUT https://registry.npmjs.org/mailtoIt
+32 http 400 https://registry.npmjs.org/mailtoIt
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '54',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Sun, 27 Dec 2015 19:42:58 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-atl6230-ATL',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1451245377.587683,VS0,VE808' }
+34 verbose request invalidating /Users/admin/.npm/registry.npmjs.org/mailtoIt on PUT
+35 error publish Failed PUT 400
+36 verbose stack Error: name can no longer contain capital letters : mailtoIt
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 400
+38 verbose pkgid mailtoIt
+39 verbose cwd /Users/admin/Desktop/Git/jquery.mailtoIt
+40 error Darwin 14.5.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+42 error node v5.3.0
+43 error npm  v3.3.12
+44 error code E400
+45 error name can no longer contain capital letters : mailtoIt
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]

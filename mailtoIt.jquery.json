@@ -1,6 +1,6 @@
  
 {
-    "name": "mailtoIt",
+    "name": "mailtoit",
     "title": "jQuery mailtoIt",
     "description": "jQuery plugin to convert any element into a mailto.",
     "keywords": [
