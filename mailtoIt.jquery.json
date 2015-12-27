@@ -1,1 +1,29 @@
  
+{
+    "name": "mailtoIt",
+    "title": "jQuery mailtoIt",
+    "description": "jQuery plugin to convert any element into a mailto.",
+    "keywords": [
+        "mailto"
+    ],
+    "version": "0.1.0",
+    "author": {
+        "name": "chris-fuchman",
+        "url": "https://"
+    },
+    "maintainers": [
+        {
+            "name": "chris-fuchman",
+            "email": "chris-fuchman@gogdog.com",
+            "url": "https://github.com/chris-fuchman"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/chris-fuchman/jquery.mailtoIt/blob/master/MIT-LICENSE.txt"
+        }
+    ],
+    "homepage": "https://github.com/chris-fuchman/jquery.mailtoIt",
+    "docs": "https://github.com/chris-fuchman/jquery.mailtoIt"
+}
